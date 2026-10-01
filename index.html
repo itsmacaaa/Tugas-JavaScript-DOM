@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JavaScript DOM </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER UTAMA -->
+        <header class="main-header">
+            <span class="badge">🌷Daily Planner🌷</span>
+            <h1 id="judul-utama">❀° ┄─╮ Aplikasi To-Do List Interaktif ╰─┄ °❀</h1>
+            <p id="sub-judul">Keep it simple, one task at a time Ი𐑼 </p>
+        </header>
+
+        <!-- GRID UTAMA TUGAS -->
+        <main class="grid-container">
+
+            <!-- TO-DO LIST -->
+            <section class="card" id="card-dinamis">
+                <h2>✧˖° 𝓜𝔂 𝓣𝓸-𝓓𝓸 𝓛𝓲𝓼𝓽  °˖✧</h2>
+                <p class="desc">Letsgo, selesaikan tugas-tugasnya satu per satu yya! ૮₍ ´ ꒳ `₎ა</p>
+            <!-- INPUT WRAPPER -->
+                <div class="input-wrapper">
+                    <input type="text" id="input-catatan" placeholder="Tambah tugas baru..." autocomplete="off">
+                    <button id="btn-tambah" class="btn btn-success">+ Tambah</button>
+                </div>
+            <!-- BOX STATISTIK -->
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <span id="stat-total" class="stat-num">0</span>
+                        <span class="stat-label">Total Tugas</span>
+                    </div>
+                    <div class="stat-box">
+                        <span id="stat-selesai" class="stat-num">0</span>
+                        <span class="stat-label">Selesai</span>
+                    </div>
+                    <div class="stat-box">
+                        <span id="stat-belum" class="stat-num">0</span>
+                        <span class="stat-label">Belum Selesai</span>
+                    </div>
+                </div>
+            <!-- DAFTAR CATATAN -->
+             <div class="list-container">
+                    <h3>✦ Today’s Little Tasks (<span id="jumlah-catatan">0</span>):</h3>
+                    <ul id="daftar-catatan" class="note-list">
+                        <!-- Elemen li akan ditambahkan secara dinamis via JavaScript -->
+                    </ul>
+                    <p id="pesan-kosong" class="empty-state">Belum ada tugas nih! Yuk, tambahkan tugas pertamamu ✦</p>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <p>&copy; 2026 Pemrograman Internet — Tugas JavaScript DOM ╰┈➤ 𝓑𝔂 𝓜𝓪𝓬𝓪 𝓒𝓪𝓷𝓽𝓲𝓴.</p>
+        </footer>
+    </div>
+    <!-- SCRIPT JAVASCRIPT Eksternal -->
+    <script src="app.js"></script>
+</body>
+</html>

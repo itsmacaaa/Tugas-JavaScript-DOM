@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: #f7a8c4; 
+    color: #9e1c52;           
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* HEADER UTAMA */
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.badge {
+    background: #ffffdb;
+    color: #9e1c52;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.main-header h1 {
+    font-size: clamp(16px, 4vw, 22px);
+    font-weight: 700;
+    color: #800e3b;
+    margin-bottom: 6px;
+}
+
+.main-header p {
+    color: #a32a5e;
+    font-size: 14px;
+}
+
+/* KARTU UTAMA */
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffdb; 
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(158, 28, 82, 0.1);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #800e3b;
+    margin-bottom: 6px;
+}
+
+.card .desc {
+    color: #a32a5e;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* INPUT & TOMBOL TAMBAH */
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1.5px solid #f7a8c4;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+    background: #ffffff;
+    color: #800e3b;
+}
+
+.input-wrapper input:focus {
+    border-color: #9e1c52;
+}
+
+.btn-success {
+    background: #9e1c52; 
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-success:hover {
+    background: #800e3b;
+}
+
+/* STATISTIK BOX */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.stat-box {
+    background-color: #f7a8c4;
+    border-radius: 12px;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+.stat-num {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #800e3b;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #800e3b;
+}
+
+/* LIST ITEMS */
+.list-container h3 {
+    font-size: 16px;
+    color: #800e3b;
+    margin-bottom: 12px;
+}
+
+.note-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note-item {
+    background-color: #ffffff;
+    border: 1px solid #f7a8c4;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-item.completed span {
+    text-decoration: line-through;
+    color: #a32a5e;
+    opacity: 0.6;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #9e1c52;
+    cursor: pointer;
+}
+
+.btn-hapus {
+    background-color: #f7a8c4;
+    color: #800e3b;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-hapus:hover {
+    background-color: #e08bab;
+}
+
+.empty-state {
+    text-align: center;
+    color: #a32a5e;
+    font-size: 14px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* FOOTER */
+.main-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #800e3b;
+}
+
